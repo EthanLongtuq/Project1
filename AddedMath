@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    //Reproduction Rate
+    double r = 1.2;
+
+    //Initial infections
+    double i = 7;
+
+    //Days passed
+    int d;
+
+    //Student population
+    int p = 39740;
+
+    int totalInfections = 0;
+
+    //Math
+    for (int j = 0; j < d; j++) {
+        i = r * i;
+        totalInfections+= i;
+    }
+}
