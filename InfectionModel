@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    //Reproduction Rate
+    double r = 2;
+
+    //Initial infections
+    double i = 1;
+    double i2 = i;
+
+    //Days passed
+    int d;
+
+    //Student population
+    int p = 39740;
+    printf("Enter the number of days\n");
+    scanf("%d",&d);
+
+    double totalInfections = 0;
+
+    //Math
+    for (int j = 0; j < d; j++) {
+        i = r * i;
+        totalInfections+= i;
+    }
+    printf("Number of infected: %f\n",totalInfections + i2);
+}
