@@ -2,10 +2,10 @@
 
 int main() {
     //Reproduction Rate
-    double r = 2;
+    double r = 1.2;
 
     //Initial infections
-    double i = 1;
+    double i = 7;
     double i2 = i;
 
     //Days passed
