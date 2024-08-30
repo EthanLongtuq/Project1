@@ -1,0 +1,2 @@
+int refund = total * 9972;
+    printf("Amount refunded is %d", refund);
