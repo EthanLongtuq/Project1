@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    //Reproduction Rate
+    double r = 2;
+
+    //Initial infections
+    double i = 1;
+    double i2 = i;
+
+    //Days passed
+    int d;
+
+    //Student population
+    int p = 39740;
+    printf("Enter the number of days\n");
+    scanf("%d",&d);
+
+    double totalInfections = 0;
+
+    //Math
+    for (int j = 0; j < d; j++) {
+        i = r * i;
+        totalInfections+= i;
+    }
+    double total = (int)(totalInfections + i2);
+    printf("Number of infected students after %d days: %f\n",d,total);
+    double percentInfected = total / 39740;
+    printf("Percent infected: %f\n",percentInfected);
+}
